@@ -26,7 +26,11 @@ export const Chat = () => {
 
   const [allMessages, setAllMessages] = useState<MessageType[]>([
     { sent: false, message: "Hey There! I am AI Bot." },
-    { sent: false, message: "You can ask me anything about Arjun! I’ve been provided with his resume and key details, so I can answer your questions based on the information I know about him." },
+    {
+      sent: false,
+      message:
+        "You can ask me anything about Siddharth. I have context on his Industrial AI, optimization, infrastructure, projects, and work profile.",
+    },
   ]);
 
   const textareaRef = useRef<HTMLTextAreaElement>(null);

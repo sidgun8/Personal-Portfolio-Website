@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect x="8" y="8" width="112" height="112" rx="16" fill="#ffffff" stroke="#0f766e" stroke-width="6"/>
+  <path d="M28 92V36" stroke="#0f766e" stroke-width="6" stroke-linecap="round"/>
+  <path d="M28 92H102" stroke="#0f766e" stroke-width="6" stroke-linecap="round"/>
+  <polyline points="38,80 52,66 66,72 82,50 98,40" fill="none" stroke="#0f766e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="38" cy="80" r="4" fill="#0f766e"/>
+  <circle cx="52" cy="66" r="4" fill="#0f766e"/>
+  <circle cx="66" cy="72" r="4" fill="#0f766e"/>
+  <circle cx="82" cy="50" r="4" fill="#0f766e"/>
+  <circle cx="98" cy="40" r="4" fill="#0f766e"/>
+</svg>

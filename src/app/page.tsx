@@ -1,6 +1,5 @@
-"use client"
-
-import VideoCard from '@/components/VideoCard';
+import CommunityHighlights from '@/components/CommunityHighlights';
+import FeaturedAppearances from '@/components/FeaturedAppearances';
 import { FileText } from 'lucide-react';
 
 function Hero() {
@@ -14,20 +13,42 @@ function Hero() {
             <img src="./images/profile.jpg" alt="" className='w-32 h-32 md:w-40 md:h-40 object-cover rounded-full mb-8' />
           </div>
 
-          <p className="text-2xl md:text-4xl font-bold w-[100%] md:leading-snug leading-snug">
-            {`Hey there! I'm Siddharth`}
+          <p className="text-2xl md:text-4xl font-semibold w-[100%] md:leading-snug leading-snug">
+            {`Siddharth Srinivasan`}
           </p>
-          <p>
-            your friendly neighborhood software developer with a knack for turning caffeine and code into pure magic.
+          <p className="text-base md:text-lg font-medium text-brand mt-1">
+            Industrial AI | Optimization | Infrastructure
+          </p>
+          <p className="mt-2">
+            I build Industrial AI, optimization workflows, and reliable infra with a rapid prototyping FDE mindset.
           </p>
           <p className="text-base md:text-lg mt-4 md:w-[90%]">
-            {`I love building web applications that not only look great but also provide a seamless user experience.
-            With a background in both front-end and back-end technologies, I'm excited to bring creative ideas to life.`}
+            {`My core stack includes ASPEN Plus, DWSIM, Python, AWS, and Palantir Foundry.
+            I run NDY (Not Done Yet) where I turn ideas into fast, practical systems that can move from concept to deployment quickly.`}
           </p>
+          <div className="mt-4 text-sm md:text-base">
+            <a href="https://www.notdoneyet.in/" target="_blank" rel="noopener noreferrer" className="underline decoration-brand underline-offset-4">
+              notdoneyet.in
+            </a>
+          </div>
+          <div className="mt-3 flex flex-wrap items-center justify-center gap-3 text-sm md:text-base">
+            <a href="https://github.com/sidgun8" target="_blank" rel="noopener noreferrer" className="underline decoration-brand underline-offset-4">
+              GitHub
+            </a>
+            <a href="https://medium.com/@WellSidWrites" target="_blank" rel="noopener noreferrer" className="underline decoration-brand underline-offset-4">
+              Medium
+            </a>
+            <a href="https://www.youtube.com/@SidGun08" target="_blank" rel="noopener noreferrer" className="underline decoration-brand underline-offset-4">
+              YouTube
+            </a>
+            <a href="https://www.google.com/maps/contrib/105841133264984381037/reviews/@17.713815,-42.7454139,3z/data=!3m1!4b1!4m3!8m2!3m1!1e1?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="underline decoration-brand underline-offset-4">
+              Google Reviews
+            </a>
+          </div>
           <div className="mt-4">
             <a
               href="/resume"
-              className='flex items-center gap-2 border rounded-full px-3 py-2 w-fit'
+              className='flex items-center gap-2 border border-brand/40 rounded-full px-3 py-2 w-fit hover:bg-brand hover:text-white transition'
             >
               <FileText strokeWidth={1.75} className="inline-block w-6 h-6" />
               Resume
@@ -49,4 +70,12 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default function Home() {
+  return (
+    <>
+      <Hero />
+      <FeaturedAppearances />
+      <CommunityHighlights />
+    </>
+  );
+}

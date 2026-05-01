@@ -2,6 +2,7 @@ export interface ProjectType {
   title: string;
   description: string[];
   tech: string[];
+  category: "tech" | "business";
   images?: string[];
   links: { name: string, link: string }[]
   dir_name?: string;
@@ -9,40 +10,60 @@ export interface ProjectType {
 
 export const projectsData: ProjectType[] = [
   {
-    title: 'Multi Lingual Industrial Safety and Hazard Management Chatbot',
+    title: 'Multilingual Industrial Safety Copilot',
+    category: "tech",
     description: [
-      "Developed a Retrieval-Augmented Generation (RAG) chatbot for Industrial Safety that assists plant operators in accessing safety protocols, SOPs, and hazard guidelines in real time.",
-      "Implemented semantic chunking and vector retrieval using bge-large and ChromaDB, enabling precise information extraction from technical safety manuals.",
-      "Adopted a hybrid retrieval strategy combining BM25 (for keyword-based matching) and ChromaDB (for semantic understanding), integrated with Meta Llama via AWS Bedrock for accurate and context-aware summarisation.",
-      "Enabled multilingual support by using ASCII-based language detection and on-the-fly translation through the LLM, ensuring inclusivity for diverse plant personnel.",
-      "Built a Streamlit-based user interface to make the chatbot easily accessible to non-technical users within industrial environments."
+      "Built an Industrial AI assistant that helps operators retrieve SOPs, hazard controls, and troubleshooting guidance in real time.",
+      "Implemented a hybrid retrieval architecture with semantic vector search and keyword matching for higher precision on plant documentation.",
+      "Integrated multilingual support so operators can query safety procedures in practical, field-ready language.",
+      "Deployed with an AWS-backed architecture for reliable inference and faster iteration during pilot rollouts."
     ],
-    tech: ['Python', 'RAG', 'LLMs', 'AWS Bedrock'],
+    tech: ['Python', 'RAG', 'AWS', 'Industrial AI'],
     links: [
       { name: "Code", link: "https://github.com/sidgun8/Industrial-Safety-for-Indian-Chemical-Plants-QA" }
     ]
   },
   {
-    title: 'NanoBubble Residence time',
+    title: 'NDY - Not Done Yet',
+    category: "business",
     description: [
-      "Developed a specialized networking platform (website and app) for the sports world.",
-      "Implemented a token-based stateless authentication system and also integrated Google login.",
-      "Reduced JavaScript bundle size by 20% through code splitting, boosting performance and reducing load times.",
-      "Achieved an SEO score of 100 and improved social media visibility by generating Open Graph images with Vercel Edge Functions."
+      "Founded NDY as a rapid prototyping venture to turn early ideas into production-ready products quickly.",
+      "Shipped web-first workflows with a focus on performance, iterative delivery, and practical user feedback loops.",
+      "Built infrastructure and automation patterns that reduce handoff time from prototype to stable release.",
+      "Use NDY as a platform to experiment with AI-enabled product and operations systems."
     ],
-    tech: ['ODE', 'MATLAB', 'Python', 'Mathematical Modelling'],
+    tech: ['Rapid Prototyping', 'Product Engineering', 'Infra', 'AWS'],
     links: [
-      { name: "Demo", link: "https://notdoneyet.in" },
-      { name: "Android App", link: "https://notdoneyet.in/app/android" },
-      { name: "Code", link: "https://github.com/arjunsharma6622/notDoneYet" }
+      { name: "Demo", link: "https://www.notdoneyet.in/" },
+      { name: "Code", link: "https://github.com/sidgun8" }
     ]
   },
-  // {
-  //   title: 'Netflix Clone',
-  //   description: 'Developed an immersive Netflix-inspired web application using React, MongoDB, Node.js, and SASS, facilitating dynamic content delivery. Employed Firebase for real-time data storage, ensuring smooth and seamless user experiences. Integrated various user-friendly features to enhance engagement and interaction.',
-  //   techStack: ['React', 'Node.js', 'Express', 'MongoDB'],
-  //   codeLink: 'https://github.com/Arjun27sharma/Netflix-Clone',
-  //   images: [1, 2, 3, 4, 5, 6, 7],
-  //   dir_name: 'netflix'
-  // },
+  {
+    title: 'Industrial Simulation and Optimization Toolkit',
+    category: "tech",
+    description: [
+      "Created simulation-backed decision workflows combining ASPEN Plus and DWSIM outputs with Python-based analytics.",
+      "Designed reusable optimization templates for process tuning, sensitivity checks, and rapid feasibility exploration.",
+      "Built reporting pipelines to turn simulation outputs into actionable operating recommendations for stakeholders.",
+      "Focused on fast prototyping and transparent assumptions to accelerate engineering decisions."
+    ],
+    tech: ['ASPEN Plus', 'DWSIM', 'Python', 'Optimization'],
+    links: [
+      { name: "Code", link: "https://github.com/sidgun8" }
+    ]
+  },
+  {
+    title: 'SidGun08 YouTube Channel Growth',
+    category: "business",
+    description: [
+      "Built a focused YouTube presence to document practical engineering, systems thinking, and execution lessons.",
+      "Positioned video content as a business-facing communication channel for visibility, trust, and inbound opportunities.",
+      "Use the channel to translate technical depth into accessible narratives for broader audiences.",
+      "Integrates content strategy with the broader NDY and personal brand direction."
+    ],
+    tech: ['Content Strategy', 'Brand Building', 'Community', 'Management'],
+    links: [
+      { name: "Demo", link: "https://www.youtube.com/@SidGun08" }
+    ]
+  },
 ];

@@ -11,10 +11,10 @@ const Heading = ({ name, heading_desc }: { name: string, heading_desc: string })
       /{name}
     </LinearGradient> */}
 
-        <h1 className="text-4xl md:text-6xl font-black bg-gradient-to-r to-[#e8e8e8] via-[#3a3a3a] from-black dark:to-[#101010] dark:via-[#3a3a3a] dark:from-[#909090] inline-block text-transparent bg-clip-text">{name}</h1>
+        <h1 className="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-brand via-[#8f1111] to-[#181818] inline-block text-transparent bg-clip-text">{name}</h1>
       </div>
 
-      <span className='flex items-center text-sm md:text-base text-[#6e6e6e]'>
+      <span className='flex items-center text-sm md:text-base text-[#5f5f5f]'>
         {heading_desc}
       </span>
     </div>

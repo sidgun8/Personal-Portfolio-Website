@@ -27,6 +27,9 @@ export function MobileNav() {
         // { name: "About", link: "/about" },
         { name: "Skills", link: "/skills" },
         { name: "Experience", link: "/experience" },
+        { name: "Education", link: "/education" },
+        { name: "Research", link: "/research" },
+        { name: "Awards", link: "/awards" },
         { name: "Projects", link: "/projects" },
         { name: "Contact", link: "/contact" },
     ]
